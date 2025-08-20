@@ -1,0 +1,718 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+    text-decoration-color: white;
+
+    input[type="text"] {
+        color: white;
+    }
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("assets/images/background.png");
+    min-height: 100vh;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.main .box {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+nav {
+    padding: 20px 4%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+    max-width: 150px;
+}
+
+nav button {
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav .button-1 {
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    margin-right: 10px;
+}
+
+nav .button-1:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav .button-2 {
+    background-color: red;
+    color: white;
+}
+
+nav .button-2:hover {
+    background-color: #e50914;
+}
+
+.hero {
+    height: 80%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    display: flex;
+    position: relative;
+    padding: 20px;
+    z-index: 5;
+}
+
+.hero .Hero1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 900;
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.hero .Hero2 {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.hero .Hero3 {
+    margin-top: 20px;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.hero .input {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.hero .input input {
+    flex: 1;
+    min-width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+.hero .input button {
+    min-width: 150px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .input button:hover {
+    background-color: #e50914;
+}
+
+.hero .input input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .input input:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+.hero .input img {
+    width: 12px;
+    height: 12px;
+}
+
+.curve {
+    background: rgba(255, 0, 0, 0.573);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-repeat: no-repeat;
+    border-top-left-radius: 80%;
+    border-top-right-radius: 80%;
+}
+
+.curve .curve-container {
+    width: 100%;
+    background: linear-gradient(blue, black 35%);
+    position: absolute;
+    bottom: 0;
+    height: 65px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.trend {
+    background-color: black;
+    position: relative;
+    padding: 40px 0;
+}
+
+.title {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 80px;
+    padding: 0 4%;
+}
+
+.trend .title span {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: white;
+}
+.trend .tile1 { grid-area: tile1; }
+.trend .tile2 { grid-area: tile2; }
+.trend .tile3 { grid-area: tile3; }
+.trend .tile4 { grid-area: tile4; }
+.trend .tile5 { grid-area: tile5; }
+.trend .tile6 { grid-area: tile6; }
+.trend .tile7 { grid-area: tile7; }
+.trend .tile8 { grid-area: tile8; }
+.trend .tile9 { grid-area: tile9; }
+.trend .tile10 { grid-area: tile10; }
+
+.trend .tiles {
+    display: grid;
+    grid-template-areas: "tile1 tile2 tile3 tile4 tile5"
+        "tile6 tile7 tile8 tile9 tile10";
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 158vh;
+    margin: auto;
+}
+
+.trend .tile {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
+}
+
+.trend .tile:hover {
+    transform: scale(1.05);
+}
+
+.trend .tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.trend .tile .number {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.WhyJoin {
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.WhyJoin .title span {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: white;
+}
+
+.WhyJoin .reasons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.WhyJoin .reason {
+    background: linear-gradient(135deg, rgba(0, 0, 255, 0.514), rgba(250, 0, 175, 0.518));
+    color: white;
+    padding: 30px 20px;
+    border-radius: 10px;
+    text-align: left;
+    min-height: 300px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.WhyJoin .reason .head {
+    font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+    font-weight: 600;
+    color: white;
+    margin-bottom: 15px;
+}
+
+.WhyJoin .reason .mid {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.WhyJoin .card {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.WhyJoin .card img {
+    max-width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+.faq {
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0;
+}
+
+.faq .title span {
+    font-size: clamp(1.25rem, 3vw, 1.5rem);
+    font-weight: 500;
+    color: white;
+}
+
+.faq .que {
+    max-width: 800px;
+    margin: 0 auto;
+    color: white;
+    padding: 20px 4%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.faq .q {
+    background-color: #333;
+    width: 100%;
+    display: flex;
+    border: none;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 70px;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.faq .q:hover {
+    background-color: #565656;
+}
+
+.faq .q span {
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    font-weight: 400;
+    flex: 1;
+}
+
+.faq .q img {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    padding: 40px 0 20px;
+}
+
+footer .input {
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 4%;
+}
+
+footer .input input {
+    flex: 1;
+    min-width: 250px;
+    height: 50px;
+    border-radius: 4px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+footer .input button {
+    min-width: 150px;
+    height: 50px;
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: background-color 0.3s ease;
+}
+
+footer .input button:hover {
+    background-color: #e50914;
+}
+
+footer .input input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+footer .input input:focus {
+    outline: none;
+    border: 2px solid red;
+}
+
+footer .input img {
+    width: 12px;
+    height: 12px;
+}
+
+footer .Hero3 {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1200px;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    color: white;
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+    padding: 0 4%;
+}
+
+footer .Small {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: flex-start;
+    max-width: 1200px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 10px auto;
+    padding: 0 4%;
+}
+
+footer .Small a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+footer .grid {
+    display: grid;
+    max-width: 1200px;
+    margin: 20px auto;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 4%;
+}
+
+footer .g1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer .g1 a {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+footer .g1 a:hover {
+    color: white;
+}
+
+footer .button {
+    max-width: 1200px;
+    margin: 50px auto 0;
+    padding: 0 4%;
+}
+
+footer .button-1 {
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.26);
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+footer .button-1:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}   
+
+footer .Small2 {
+    color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    justify-content: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: flex-start;
+    max-width: 1200px;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 25px auto 10px;
+    padding: 0 4%;
+}
+
+footer .Small3 {
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: left;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-items: flex-start;
+    max-width: 1200px;
+    font-size: 13px;
+    font-weight: 400;
+    margin: 10px auto;
+    padding: 0 4%;
+}
+
+/* ========== Responsive Design ========== */
+
+/* Large screens (min-width: 1200px) */
+@media screen and (min-width: 1200px) {
+    .trend .tiles {
+        grid-template-columns: repeat(5, 1fr);
+    }
+    
+    .WhyJoin .reasons {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .trend .tiles {
+        grid-template-areas: 
+            "tile1 tile2 tile3"
+            "tile4 tile5 tile6"
+            "tile7 tile8 tile9"
+            "tile10 . .";
+    }
+    
+    .WhyJoin .reasons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    footer .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 15px 4%;
+    }
+    
+    nav img {
+        width: 100px;
+    }
+    
+    nav button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+    
+    .hero {
+        padding: 15px;
+        height: 70%;
+    }
+    
+    .hero .input {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .hero .input input,
+    .hero .input button {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    .trend .tiles {
+        grid-template-areas: 
+            "tile1"
+            "tile2"
+            "tile3"
+            "tile4"
+            "tile5"
+            "tile6"
+            "tile7"
+            "tile8"
+            "tile9"
+            "tile10";
+    }
+    
+    .WhyJoin .reasons {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .WhyJoin .reason {
+        min-height: 250px;
+        padding: 25px 20px;
+    }
+    
+    .WhyJoin .card img {
+        max-width: 60px;
+    }
+    
+    .faq .q {
+        padding: 15px;
+        min-height: 60px;
+    }
+    
+    footer .input {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    footer .input input,
+    footer .input button {
+        width: 100%;
+        min-width: auto;
+    }
+    
+    footer .grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+    nav {
+        padding: 10px 4%;
+    }
+    
+    nav img {
+        width: 80px;
+    }
+    
+    nav button {
+        font-size: 11px;
+        padding: 5px 10px;
+    }
+    
+    .hero {
+        padding: 10px;
+        height: 60%;
+    }
+    
+    .trend .tiles {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    .WhyJoin .reason {
+        min-height: 200px;
+        padding: 20px 15px;
+    }
+    
+    .WhyJoin .card {
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .WhyJoin .card img {
+        max-width: 50px;
+    }
+    
+    .faq .q {
+        padding: 12px;
+        min-height: 50px;
+    }
+    
+    .faq .q span {
+        font-size: 14px;
+    }
+    
+    .faq .q img {
+        width: 16px;
+        height: 16px;
+    }
+}
